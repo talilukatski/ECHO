@@ -845,14 +845,14 @@ def render_lyrics_panel():
 
                 c_no, c_yes = st.columns(2)
                 with c_no:
-                    if st.button("No", use_container_width=True, key="confirm_delete_no"):
+                    if st.button("❌", use_container_width=True, key="confirm_delete_no"):
                         st.session_state.confirm_delete = False
                         st.session_state.confirm_delete_idx = None
                         st.session_state.selected_line_index = None
                         st.rerun()
 
                 with c_yes:
-                    if st.button("Yes", use_container_width=True, key="confirm_delete_yes"):
+                    if st.button("✅", use_container_width=True, key="confirm_delete_yes"):
                         if 0 <= idx < len(song.lyrics):
                             if hasattr(song, "delete_lyric_line"):
                                 song.delete_lyric_line(idx)
@@ -943,9 +943,9 @@ def render_lyrics_panel():
                 st.markdown("<small style='opacity:0.65;'>Are you sure?</small>", unsafe_allow_html=True)
                 c2, c1 = st.columns(2)
                 with c2:
-                    no_save = st.form_submit_button("No", use_container_width=True, key=f"no_save_{idx}")
+                    no_save = st.form_submit_button("❌", use_container_width=True, key=f"no_save_{idx}")
                 with c1:
-                    yes_save = st.form_submit_button("Yes, save", use_container_width=True, key=f"yes_save_{idx}")
+                    yes_save = st.form_submit_button("✅, save", use_container_width=True, key=f"yes_save_{idx}")
                 save = False
                 cancel = False
             else:
@@ -1500,4 +1500,5 @@ def _chat_add(role: str, content: str, scroll: bool = True):
     st.session_state.chat_history.append({"role": role, "content": content})
     if scroll:
         st.session_state.scroll_chat_to_bottom = True
+
 
