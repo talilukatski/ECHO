@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "7dde1e5a-9e04-4393-8e71-c1d832115263",
+    "name": "First Time Breathing",
+    "updated_at": "2026-01-26T10:52:08Z",
+    "song": {
+      "title": "First Time Breathing",
+      "intent": "Topic: Leaving the past behind and choosing yourself for the first time.\nMood: Hopeful, light, morning energy.",
+      "lyrics": [
+        "I left my fears on an empty street",
+        "Old names fading under my feet",
+        "The sky feels wider than before",
+        "I don’t ask permission anymore",
+        "Every step is mine alone",
+        "I’m not lost, I’m finally home"
+      ],
+      "melody_description": "Mid-tempo pop (95–105 BPM), acoustic guitar, soft synths, uplifting chorus.",
+      "genre": null,
+      "sub_genre": null
+    }
+  },
+  {
+    "id": "71a9a745-7aa9-49c0-9198-3e114f44bd82",
+    "name": "Between the Words",
+    "updated_at": "2026-01-26T10:46:58Z",
+    "song": {
+      "title": "Between the Words",
+      "intent": "Topic: Two people who still love each other, but know they can’t stay together.\nMood: Soft, intimate, late-night sadness.",
+      "lyrics": [
+        "We talk in circles, afraid to fall",
+        "Your shadow still lives on my wall",
+        "I hold the truth inside my chest",
+        "Some goodbyes hurt when left unsaid",
+        "The room remembers you and me",
+        "A love we almost got to be",
+        "I walk away, but not too far",
+        "Still breaking under the same old star"
+      ],
+      "melody_description": "Slow piano ballad, 65 BPM, minimal drums, emotional vocal with long reverb.",
+      "genre": null,
+      "sub_genre": null
+    }
+  }
+]
