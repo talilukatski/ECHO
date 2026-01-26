@@ -78,16 +78,16 @@ def inject_global_css():
         font-weight: 400 !important;
         min-width: 4px !important;
         width: 5px !important;
-        flex: 0 0 20px !important;
+        flex: 0 0 15px !important;
         text-align: right !important;
-        font-size: 14px !important;
+        font-size: 13px !important;
       }}
 
       .lyricsbox .lyric-txt {{
         color: var(--lyrics-text) !important;
         flex: 1 1 auto !important;
-        font-weight: 500 !important;
-        font-size: 20px !important;
+        font-weight: 550 !important;
+        font-size: 16px !important;
         line-height: 1.2 !important;
         font-family: Arial, Helvetica, sans-serif !important;
       }}
@@ -1500,3 +1500,4 @@ def _chat_add(role: str, content: str, scroll: bool = True):
     st.session_state.chat_history.append({"role": role, "content": content})
     if scroll:
         st.session_state.scroll_chat_to_bottom = True
+
