@@ -945,7 +945,7 @@ def render_lyrics_panel():
                 with c2:
                     no_save = st.form_submit_button("❌", use_container_width=True, key=f"no_save_{idx}")
                 with c1:
-                    yes_save = st.form_submit_button("✅, save", use_container_width=True, key=f"yes_save_{idx}")
+                    yes_save = st.form_submit_button("✅", use_container_width=True, key=f"yes_save_{idx}")
                 save = False
                 cancel = False
             else:
@@ -1500,5 +1500,6 @@ def _chat_add(role: str, content: str, scroll: bool = True):
     st.session_state.chat_history.append({"role": role, "content": content})
     if scroll:
         st.session_state.scroll_chat_to_bottom = True
+
 
 
