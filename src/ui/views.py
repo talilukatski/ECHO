@@ -1037,8 +1037,7 @@ def _push_genre_summary_to_chat(song):
         "Quick direction question:\n"
         "• What vibe do you want (happy/dark/nostalgic)?\n"
         "• Tempo/BPM range?\n"
-        "• Main instruments (e.g., piano, sax, drums)?\n"
-        "Answer in 1–2 lines and I’ll shape a melody prompt."
+        "• Main instruments (e.g., piano, sax, drums)?"
     )
     st.session_state.chat_history.append({"role": "assistant", "content": msg})
     st.session_state.scroll_chat_to_bottom = True
@@ -1500,6 +1499,7 @@ def _chat_add(role: str, content: str, scroll: bool = True):
     st.session_state.chat_history.append({"role": role, "content": content})
     if scroll:
         st.session_state.scroll_chat_to_bottom = True
+
 
 
 
