@@ -598,7 +598,10 @@ def render_landing_page():
         )
 
         st.markdown(
-            "<p class='landing-hint'>Click on top left arrows to add new one</p>",
+            "<p class='landing-hint'>"
+            "Click on the top-left arrows to add a new one<br>"
+            "Created by Antal Lykazky and Itay Oucherenko"
+            "</p>",
             unsafe_allow_html=True
         )
         st.markdown("</div>", unsafe_allow_html=True)
@@ -1499,6 +1502,7 @@ def _chat_add(role: str, content: str, scroll: bool = True):
     st.session_state.chat_history.append({"role": role, "content": content})
     if scroll:
         st.session_state.scroll_chat_to_bottom = True
+
 
 
 
